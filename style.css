@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("image/BG.jpg");
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  font-size: 25px;
+}
+
+#status{
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  color:white;
+  background-color: #0257d8;
+  border: none;
+  border-radius: 3px;
+}
+
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    
+  }
+footer p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ffffff;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  footer p a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+@keyframes winAnimation {
+  0%{background-color: #2c3a47;}
+  100%{background-color: #130f40;}
+  
+}
